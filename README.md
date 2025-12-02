@@ -41,7 +41,7 @@ O sistema MAS é estruturado para suportar consultas e resolução de demandas c
 
 ## Architecture
 
-![agent_architecture](MAS ADOCAO.drawio.png)
+![agent_architecture]([MAS ADOCAO.drawio.png](https://github.com/fariaswladimir/adoption_MAS/blob/f35bb91a56ecf0a34b1b0843d9e5df6bcf0b028f/MAS%20ADOCAO.drawio.png))
 
 UI -> prompt -> API -> Supervisor -> [Legal, XAI,Process Psycossocial Conversational] -> API -> UI
 
