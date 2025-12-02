@@ -11,7 +11,7 @@ load_dotenv()
 
 conversational_pipeline = pipeline("text2text-generation")
 
-database = FinancialDatabase()
+database = FinancialDatabase() 
 
 rag_model = HuggingFaceModel(
     model_name = "cfahlgren1/natural-functions",
