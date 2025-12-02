@@ -38,10 +38,11 @@ O sistema MAS é estruturado para suportar consultas e resolução de demandas c
 - Gera explicações transparentes sobre decisões do sistema
 - Fornece relatórios sobre o funcionamento holístico do MAS
 
+# Arquitetura do Sistema de Agentes para Adoção
 
-## Architecture
+![Diagrama de Arquitetura MAS Adoção](https://github.com/fariaswladimir/adoption_MAS/blob/main/MAS%20ADOCAO.drawio.png?raw=true)
 
-![agent_architecture]([MAS ADOCAO.drawio.png](https://github.com/fariaswladimir/adoption_MAS/blob/f35bb91a56ecf0a34b1b0843d9e5df6bcf0b028f/MAS%20ADOCAO.drawio.png))
+*Diagrama da arquitetura multiagente para sistema de adoção brasileiro*
 
 UI -> prompt -> API -> Supervisor -> [Legal, XAI,Process Psycossocial Conversational] -> API -> UI
 
