@@ -3,24 +3,47 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF7C00?style=for-the-badge&logo=streamlitlogoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
-# Ibovespa stock agent
+# MAS (Sistema Multiagente) para Processo de Adoção no Brasil
 
-TODO: Adjust the import paths
+O sistema MAS é estruturado para suportar consultas e resolução de demandas complexas no contexto da adoção, reunindo agentes especializados, supervisão inteligente e integração de fontes diversas para garantir robustez, transparência e adaptabilidade.
 
-Multiagent architecture that rewrites the user input for the desired agent interpreted by the supervisor agent, the supervisor agent
-supervises 3 agents:
 
-- Finance agent: This agent gets the input and searches for the ticker and adds to the vectorial db or returns the datapoints to plot
-- Summarizer agent: This agent searches the web for news related to company and stores for retrieval purposes
-- Conversational agent: This agent calls the text2text-generator giving context from the vectordb about the company that the user prompted 
+## Agente Jurídico:
+- Especialista no ECA (Estatuto da Criança e Adolescente), leis de adoção e regulamentações correlatas
+- Explica procedimentos legais, prazos, direitos e deveres
+- Fornece informações sobre habilitação, destituição do poder familiar e aspectos processuais
+- Sempre indica que a resposta não substitui consulta jurídica profissional
+
+## Agente Psicossocial:
+- Foco no perfil da criança/adolescente e preparação psicológica
+- Trabalha questões de tempo de espera vs. perfil desejado
+- Orienta sobre estágio de convivência e adaptação familiar
+- Aborda aspectos emocionais e de vínculo
+
+## Agente de Processos (Burocrático):
+- Consulta status simulado no SNA (Sistema Nacional de Adoção)
+- Lista documentos necessários e etapas do processo
+- Explica fluxos administrativos e prazos processuais
+- Orienta sobre cadastro e movimentação no sistema
+
+## Agente Conversacional:
+- Especialista em engajamento sobre o processo de adoção brasileiro
+- Lida com conversas introdutórias, acolhimento e orientação geral
+- Encaminha para agentes especializados quando necessário
+- Fornece suporte emocional inicial
+
+## Agente Supervisor XAI (Explicável):
+- Monitora todos os outros agentes, coletando logs, resultados e consultas
+- Analisa padrões de delegação e desempenho do sistema
+- Gera explicações transparentes sobre decisões do sistema
+- Fornece relatórios sobre o funcionamento holístico do MAS
+
 
 ## Architecture
 
-TODO: Insert the architecture image
+![agent_architecture](MAS ADOCAO.drawio.png)
 
-![agent_architecture](arquitetura_supervisor.png)
-
-UI -> prompt -> API -> Supervisor -> [Finance, Summarizer, Conversational] -> API -> UI
+UI -> prompt -> API -> Supervisor -> [Legal, XAI,Process Psycossocial Conversational] -> API -> UI
 
 ## Stack used
 
