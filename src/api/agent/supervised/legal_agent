@@ -31,3 +31,6 @@ legal_agent = Agent(
     ),
     deps_type = dict
 )
+
+
+#Código para chamar o ECA, Chamar a lei da adocao e chamar a ontologia.
